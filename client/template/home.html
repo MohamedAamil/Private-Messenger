@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media</title>
+     <link href="{{url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <img src="https://www.freepngimg.com/thumb/decorative_border/34523-9-text-box-frame-photo.png" alt="Text Bubble" class="image">
+    <h1>Private Messenger</h1>
+    <div id="form">
+    <form action="{{url_for('insert')}}" method="POST">
+        <label> Name </label>
+        <input type="text" name="name">
+
+        <label> Post </label>
+        <input type="text" name="message">
+
+        <label> Opt: Images(url) </label>
+        <input type="text" name="image">
+
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    <div id="space">
+    <form action="{{url_for('delete')}}" method="POST">
+        <input type="submit" value="Delete All Records">
+    </form>
+    </div>
+    <h3>Chat History</h3>
+    <div id="chat">
+    {% for i in range(length) %}
+    <p>{{names[i]}}: {{chats[i]}}</p>
+        {% if images[i] != "" %}
+            <img src="{{images[i]}}" alt="/Image/" class="image">
+        {% endif %}
+    {% endfor %}
+    </div>
+</body>
+</html>

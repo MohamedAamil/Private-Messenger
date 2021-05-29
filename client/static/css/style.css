@@ -1,0 +1,46 @@
+body{
+    background-color: #24201f;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 4.5em;
+    margin-top: 1%;
+    margin-bottom: 0em;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+}
+
+h3{
+    font-size: 2.0em;
+    margin-top: 3%;
+    text-align: center;
+    font-family: "Gill Sans", "sans-serif", monospace;
+    color: #54d817;
+}
+
+#form{
+    margin-top: 5%;
+    margin-bottom: 0em;
+    font-family: "Gill Sans", "sans-serif", monospace;
+    color: white;
+}
+
+#chat{
+    font-size: 1.3em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+}
+
+.image{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 95.0em 14.0em;
+    height: 150px;
+}
+
+#space{
+    margin-top: 2%;
+}
